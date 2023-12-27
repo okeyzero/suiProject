@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/client/errors.ts"],
+  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nconst CODE_TO_ERROR_TYPE: Record<number, string> = {\n\t'-32700': 'ParseError',\n\t'-32600': 'InvalidRequest',\n\t'-32601': 'MethodNotFound',\n\t'-32602': 'InvalidParams',\n\t'-32603': 'InternalError',\n};\n\nexport class SuiHTTPTransportError extends Error {}\n\nexport class JsonRpcError extends SuiHTTPTransportError {\n\tcode: number;\n\ttype: string;\n\n\tconstructor(message: string, code: number) {\n\t\tsuper(message);\n\t\tthis.code = code;\n\t\tthis.type = CODE_TO_ERROR_TYPE[code] ?? 'ServerError';\n\t}\n}\n\nexport class SuiHTTPStatusError extends SuiHTTPTransportError {\n\tstatus: number;\n\tstatusText: string;\n\n\tconstructor(message: string, status: number, statusText: string) {\n\t\tsuper(message);\n\t\tthis.status = status;\n\t\tthis.statusText = statusText;\n\t}\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAGA,MAAM,qBAA6C;AAAA,EAClD,UAAU;AAAA,EACV,UAAU;AAAA,EACV,UAAU;AAAA,EACV,UAAU;AAAA,EACV,UAAU;AACX;AAEO,MAAM,8BAA8B,MAAM;AAAC;AAE3C,MAAM,qBAAqB,sBAAsB;AAAA,EAIvD,YAAY,SAAiB,MAAc;AAC1C,UAAM,OAAO;AACb,SAAK,OAAO;AACZ,SAAK,OAAO,mBAAmB,IAAI,KAAK;AAAA,EACzC;AACD;AAEO,MAAM,2BAA2B,sBAAsB;AAAA,EAI7D,YAAY,SAAiB,QAAgB,YAAoB;AAChE,UAAM,OAAO;AACb,SAAK,SAAS;AACd,SAAK,aAAa;AAAA,EACnB;AACD;",
+  "names": []
+}

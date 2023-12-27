@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/signers/types.ts"],
+  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nimport type { SerializedSignature } from '../cryptography/signature.js';\n\nexport type SignedTransaction = {\n\ttransactionBlockBytes: string;\n\tsignature: SerializedSignature;\n};\n\nexport type SignedMessage = {\n\tmessageBytes: string;\n\tsignature: SerializedSignature;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}

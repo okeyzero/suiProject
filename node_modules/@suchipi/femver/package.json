@@ -1,0 +1,36 @@
+{
+  "name": "@suchipi/femver",
+  "version": "1.0.0",
+  "description": "Lightweight alternative to semver, supporting absolute versions only",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "semver",
+    "light",
+    "small",
+    "semantic",
+    "version",
+    "versioning",
+    "compare",
+    "comparison",
+    "parse"
+  ],
+  "author": "Lily Scott <me@suchipi.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suchipi/femver.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@suchipi/jasmine-mini": "^3.2.1",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "pretty-print-error": "^1.0.0"
+  }
+}

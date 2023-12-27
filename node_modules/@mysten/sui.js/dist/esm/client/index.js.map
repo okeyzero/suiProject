@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/client/index.ts"],
+  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nexport * from './http-transport.js';\nexport * from './network.js';\nexport * from './types/index.js';\nexport * from './client.js';\nexport * from './errors.js';\n"],
+  "mappings": "AAGA,cAAc;AACd,cAAc;AACd,cAAc;AACd,cAAc;AACd,cAAc;",
+  "names": []
+}

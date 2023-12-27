@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/client/types/index.ts"],
+  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nexport * from './chain.js';\nexport * from './coins.js';\nexport * from './common.js';\nexport * from './changes.js';\nexport * from './generated.js';\nexport * from './params.js';\n"],
+  "mappings": ";;;;;;;;;;;;;;;AAAA;AAAA;AAGA,0BAAc,uBAHd;AAIA,0BAAc,uBAJd;AAKA,0BAAc,wBALd;AAMA,0BAAc,yBANd;AAOA,0BAAc,2BAPd;AAQA,0BAAc,wBARd;",
+  "names": []
+}

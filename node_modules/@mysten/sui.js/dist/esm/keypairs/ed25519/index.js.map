@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/keypairs/ed25519/index.ts"],
+  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nexport * from './keypair.js';\nexport * from './publickey.js';\n"],
+  "mappings": "AAGA,cAAc;AACd,cAAc;",
+  "names": []
+}

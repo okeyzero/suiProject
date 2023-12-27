@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/zklogin/bcs.ts"],
+  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nimport type { InferBcsInput } from '@mysten/bcs';\nimport { bcs } from '@mysten/bcs';\n\nexport const zkLoginSignature = bcs.struct('ZkLoginSignature', {\n\tinputs: bcs.struct('ZkLoginSignatureInputs', {\n\t\tproofPoints: bcs.struct('ZkLoginSignatureInputsProofPoints', {\n\t\t\ta: bcs.vector(bcs.string()),\n\t\t\tb: bcs.vector(bcs.vector(bcs.string())),\n\t\t\tc: bcs.vector(bcs.string()),\n\t\t}),\n\t\tissBase64Details: bcs.struct('ZkLoginSignatureInputsClaim', {\n\t\t\tvalue: bcs.string(),\n\t\t\tindexMod4: bcs.u8(),\n\t\t}),\n\t\theaderBase64: bcs.string(),\n\t\taddressSeed: bcs.string(),\n\t}),\n\tmaxEpoch: bcs.u64(),\n\tuserSignature: bcs.vector(bcs.u8()),\n});\n\nexport type ZkLoginSignature = InferBcsInput<typeof zkLoginSignature>;\nexport type ZkLoginSignatureInputs = ZkLoginSignature['inputs'];\n"],
+  "mappings": "AAIA,SAAS,WAAW;AAEb,MAAM,mBAAmB,IAAI,OAAO,oBAAoB;AAAA,EAC9D,QAAQ,IAAI,OAAO,0BAA0B;AAAA,IAC5C,aAAa,IAAI,OAAO,qCAAqC;AAAA,MAC5D,GAAG,IAAI,OAAO,IAAI,OAAO,CAAC;AAAA,MAC1B,GAAG,IAAI,OAAO,IAAI,OAAO,IAAI,OAAO,CAAC,CAAC;AAAA,MACtC,GAAG,IAAI,OAAO,IAAI,OAAO,CAAC;AAAA,IAC3B,CAAC;AAAA,IACD,kBAAkB,IAAI,OAAO,+BAA+B;AAAA,MAC3D,OAAO,IAAI,OAAO;AAAA,MAClB,WAAW,IAAI,GAAG;AAAA,IACnB,CAAC;AAAA,IACD,cAAc,IAAI,OAAO;AAAA,IACzB,aAAa,IAAI,OAAO;AAAA,EACzB,CAAC;AAAA,EACD,UAAU,IAAI,IAAI;AAAA,EAClB,eAAe,IAAI,OAAO,IAAI,GAAG,CAAC;AACnC,CAAC;",
+  "names": []
+}

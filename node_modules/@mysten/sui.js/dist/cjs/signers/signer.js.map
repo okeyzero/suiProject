@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/signers/signer.ts"],
-  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nimport type { SerializedSignature } from '../cryptography/signature.js';\n\n///////////////////////////////\n// Exported Types\n\n///////////////////////////////\n// Exported Abstracts\n/**\n * Serializes a transaction to a string that can be signed by a `Signer`.\n */\nexport interface Signer {\n\t// Returns the checksum address\n\tgetAddress(): Promise<string>;\n\n\t/**\n\t * Returns the signature for the data and the public key of the signer\n\t */\n\tsignData(data: Uint8Array): Promise<SerializedSignature>;\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
-  "names": []
-}

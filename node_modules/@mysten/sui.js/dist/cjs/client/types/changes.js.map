@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../src/client/types/changes.ts"],
-  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nimport type { SuiObjectChange } from './generated.js';\n\nexport type SuiObjectChangePublished = Extract<SuiObjectChange, { type: 'published' }>;\nexport type SuiObjectChangeTransferred = Extract<SuiObjectChange, { type: 'transferred' }>;\nexport type SuiObjectChangeMutated = Extract<SuiObjectChange, { type: 'mutated' }>;\nexport type SuiObjectChangeDeleted = Extract<SuiObjectChange, { type: 'deleted' }>;\nexport type SuiObjectChangeWrapped = Extract<SuiObjectChange, { type: 'wrapped' }>;\nexport type SuiObjectChangeCreated = Extract<SuiObjectChange, { type: 'created' }>;\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
-  "names": []
-}

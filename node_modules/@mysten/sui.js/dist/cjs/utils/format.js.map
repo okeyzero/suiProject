@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../src/utils/format.ts"],
-  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nconst ELLIPSIS = '\\u{2026}';\n\nexport function formatAddress(address: string) {\n\tif (address.length <= 6) {\n\t\treturn address;\n\t}\n\n\tconst offset = address.startsWith('0x') ? 2 : 0;\n\n\treturn `0x${address.slice(offset, offset + 4)}${ELLIPSIS}${address.slice(-4)}`;\n}\n\nexport function formatDigest(digest: string) {\n\t// Use 10 first characters\n\treturn `${digest.slice(0, 10)}${ELLIPSIS}`;\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAGA,MAAM,WAAW;AAEV,SAAS,cAAc,SAAiB;AAC9C,MAAI,QAAQ,UAAU,GAAG;AACxB,WAAO;AAAA,EACR;AAEA,QAAM,SAAS,QAAQ,WAAW,IAAI,IAAI,IAAI;AAE9C,SAAO,KAAK,QAAQ,MAAM,QAAQ,SAAS,CAAC,IAAI,WAAW,QAAQ,MAAM,EAAE;AAC5E;AAEO,SAAS,aAAa,QAAgB;AAE5C,SAAO,GAAG,OAAO,MAAM,GAAG,EAAE,IAAI;AACjC;",
-  "names": []
-}

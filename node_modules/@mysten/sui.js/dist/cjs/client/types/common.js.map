@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../src/client/types/common.ts"],
-  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\nimport type { CallArg } from '../../bcs/index.js';\n\nexport type SuiJsonValue = boolean | number | string | CallArg | Array<SuiJsonValue>;\nexport type Order = 'ascending' | 'descending';\nexport type Unsubscribe = () => Promise<boolean>;\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
-  "names": []
-}

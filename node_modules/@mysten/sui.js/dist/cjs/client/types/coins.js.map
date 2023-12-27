@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../src/client/types/coins.ts"],
-  "sourcesContent": ["// Copyright (c) Mysten Labs, Inc.\n// SPDX-License-Identifier: Apache-2.0\n\nexport type CoinBalance = {\n\tcoinType: string;\n\tcoinObjectCount: number;\n\ttotalBalance: string;\n\tlockedBalance: Record<string, string>;\n};\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
-  "names": []
-}

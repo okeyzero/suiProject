@@ -16,7 +16,8 @@ npm i
 ```
 
 首先，您需要在 keys.txt 文件中输入相关的信息。请确保按照下面的格式添加您的信息（例如，地址、私钥等），一行一个：
-
+(用这个钱包 
+[https://chrome.google.com/webstore/detail/efbglgofoippbgcjepnhiblaibcnclgk](https://chromewebstore.google.com/detail/martian-aptos-sui-wallet/efbglgofoippbgcjepnhiblaibcnclgk) 点击 Account Details )
 ```bash
 0x53b99721eb**********132ad0a6
 0xa5d67**********c4841dfe7e----0x53b99721eb**********132ad0a6
